@@ -1,0 +1,310 @@
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+# 安装目录路径
+RewriteBase /
+# Rewrite 系统规则请勿修改
+ErrorDocument 404 /404.html
+
+RewriteRule ^index.html /index.php
+RewriteRule ^suanming/scbz/?$ /index.php\?ct=h5_suanming&ac=sm_form&base=365
+RewriteRule ^suanming/cglm/?$ /index.php\?ct=h5_suanming&ac=sm_form&base=367
+RewriteRule ^suanming/rglm/?$ /index.php\?ct=h5_suanming&ac=sm_form&base=366
+RewriteRule ^suanming/sscy/?$ /index.php\?ct=h5_suanming&ac=sm_form&base=368
+RewriteRule ^suanming/bzcs/?$ /index.php\?ct=h5_suanming&ac=sm_form&base=369
+RewriteRule ^suanming/fscs/?$ /index.php\?ct=h5_suanming&ac=fscs&tid=370
+RewriteRule ^suanming/clear/?$ /index.php\?ct=h5_suanming&ac=clearcache
+
+
+RewriteRule ^xingming/xmfx/(.*)/?$ /index.php\?ct=h5_xingming&ac=xmfx&name=$1
+RewriteRule ^xingming/xmfx/?$ /index.php\?ct=h5_xingming&ac=xmfx
+RewriteRule ^xingming/qiming/list-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+).html?$ /index.php\?ct=h5_xingming&ac=qiming&xid=$1&sex=$2&hs=$3&page=$4
+RewriteRule ^xingming/qiming/list-([0-9]+).html?$ /index.php\?ct=h5_xingming&ac=qiming&xid=$1
+RewriteRule ^xingming/qiming/?$ /index.php\?ct=h5_xingming&ac=qiming
+RewriteRule ^xingming/gsqm/?$ /index.php\?ct=h5_xingming&ac=gsqm
+RewriteRule ^xingming/gsqm/(.*)/?$ /index.php\?ct=h5_xingming&ac=gsqm&name=$1
+RewriteRule ^xingming/xmpd/?$ /index.php\?ct=h5_xingming&ac=xmpd
+RewriteRule ^xingming/dzqiming/?$ /index.php\?ct=h5_xingming&ac=dzqm
+
+
+RewriteRule ^paipan/bazi/?$ /index.php\?ct=h5_paipan&ac=bazi
+RewriteRule ^paipan/ziwei/?$ /index.php\?ct=h5_paipan&ac=ziwei
+RewriteRule ^paipan/liuren/?$ /index.php\?ct=h5_paipan&ac=liuren
+RewriteRule ^paipan/xuankongfeixing/?$ /index.php\?ct=h5_paipan&ac=xuankongfeixing
+RewriteRule ^paipan/qimendunjia/?$ /index.php\?ct=h5_paipan&ac=qimendunjia
+RewriteRule ^paipan/liuyao/?$ /index.php\?ct=h5_paipan&ac=liuyao
+RewriteRule ^paipan/xingpan/?$ /index.php\?ct=h5_paipan&ac=xingpan
+
+
+RewriteRule ^peidui/hehun/?$ /index.php\?ct=h5_peidui&ac=hehun
+RewriteRule ^peidui/qq/?$ /index.php\?ct=h5_peidui&ac=qq
+RewriteRule ^peidui/mingzi/?$ /index.php\?ct=h5_peidui&ac=mingzi
+RewriteRule ^peidui/shengxiao/?$ /index.php\?ct=h5_peidui&ac=shengxiao
+RewriteRule ^peidui/xuexing/?$ /index.php\?ct=h5_peidui&ac=xuexing
+RewriteRule ^peidui/xingzuo/?$ /index.php\?ct=h5_peidui&ac=xingzuo
+RewriteRule ^peidui/xingzuoxuexing/?$ /index.php\?ct=h5_peidui&ac=xingzuoxuexing
+RewriteRule ^peidui/shengxiaoxuexing/?$ /index.php\?ct=h5_peidui&ac=shengxiaoxuexing
+RewriteRule ^peidui/xingzuoshengxiao/?$ /index.php\?ct=h5_peidui&ac=xingzuoshengxiao
+
+RewriteRule ^haoma/index.html$ /index.php\?ct=h5_haoma&ac=index
+RewriteRule ^haoma/shouji/?$ /index.php\?ct=h5_haoma&ac=shouji
+RewriteRule ^haoma/dianhua/?$ /index.php\?ct=h5_haoma&ac=dianhua
+RewriteRule ^haoma/shenfenzheng/?$ /index.php\?ct=h5_haoma&ac=shenfenzheng
+RewriteRule ^haoma/qq/?$ /index.php\?ct=h5_haoma&ac=qq
+RewriteRule ^haoma/chepai/?$ /index.php\?ct=h5_haoma&ac=chepai
+RewriteRule ^haoma/shengrimima/?$ /index.php\?ct=h5_haoma&ac=shengrimima
+RewriteRule ^haoma/shengrihua/?$ /index.php\?ct=h5_haoma&ac=shengrihua
+RewriteRule ^haoma/shengrishu/?$ /index.php\?ct=h5_haoma&ac=shengrishu
+RewriteRule ^haoma/chushengri/?$ /index.php\?ct=h5_haoma&ac=chushengri
+RewriteRule ^haoma/?$ /index.php\?ct=h5_haoma&ac=index
+
+RewriteRule ^hdjr/yinyangli/?$ /index.php\?ct=h5_hdjr&ac=yinyangli
+RewriteRule ^hdjr/lishi/([0-9]+)/?$ /index.php\?ct=h5_hdjr&ac=lishi&id=$1
+RewriteRule ^hdjr/lishi/?$ /index.php\?ct=h5_hdjr&ac=lishi
+RewriteRule ^hdjr/zeri/?$ /index.php\?ct=h5_hdjr&ac=zeri
+RewriteRule ^hdjr/zeri/([^/]*)/?$ /index.php\?ct=h5_hdjr&ac=zeri&lmanacCond=$1
+RewriteRule ^hdjr/huanglijieshi/?$ /index.php\?ct=h5_hdjr&ac=huanglijieshi
+RewriteRule ^hdjr/index.html?$ /index.php\?ct=h5_hdjr
+
+RewriteRule ^xingzuo/?$ /index.php\?ct=h5_xingzuo
+RewriteRule ^xingzuo/zhuanqu/?$ /index.php\?ct=h5_xingzuo&ac=zhuanqu
+RewriteRule ^xingzuo/yunshi/?$ /index.php\?ct=h5_xingzuo&ac=yunshi
+RewriteRule ^xingzuo/index.html?$ /index.php\?ct=h5_xingzuo
+RewriteRule ^hdjr/([^/]*)/?$ /index.php\?ct=h5_hdjr&date=$1
+RewriteRule ^hdjr/?$ /index.php\?ct=h5_hdjr
+
+
+RewriteRule ^zgjm/list-([0-9]+).html /index.php\?ct=h5_zgjm&ac=lists&tid=$1
+RewriteRule ^zgjm/list-([0-9]+)-([0-9]+).html /index.php\?ct=h5_zgjm&ac=lists&tid=$1&page=$2
+RewriteRule ^zgjm/show-([0-9]+)-([0-9]+).html /index.php\?ct=h5_zgjm&ac=show&id=$1&page=$2
+RewriteRule ^zgjm/show-([0-9]+).html /index.php\?ct=h5_zgjm&ac=show&id=$1
+RewriteRule ^zgjm/sech-(.*)-([0-9]+).html /index.php\?ct=h5_zgjm&ac=search&q=$1&page=$2
+RewriteRule ^zgjm/?$ /index.php\?ct=h5_zgjm
+RewriteRule ^zgjm/index.html /index.php\?ct=h5_zgjm
+
+RewriteRule ^left_news.js$ /index.php\?ct=h5_news&ac=left_news
+RewriteRule ^baike/?$ /index.php\?ct=h5_news&ac=index
+RewriteRule ^baike/sech-(.*)-([0-9]+).html$ /index.php\?ct=h5_news&ac=search&q=$1&page=$2
+
+RewriteRule ^list-([0-9]+).html /index.php\?ct=h5_news&ac=lists&tid=$1
+RewriteRule ^list-([0-9]+)-([0-9]+).html /index.php\?ct=h5_news&ac=lists&tid=$1&category=$2
+RewriteRule ^list-([0-9]+)-([0-9]+)-([0-9]+).html /index.php\?ct=h5_news&ac=lists&tid=$1&category=$2&page=$3
+RewriteRule ^show-([0-9]+)-([0-9]+).html /index.php\?ct=h5_news&ac=show&id=$1&page=$2
+RewriteRule ^show-([0-9]+).html /index.php\?ct=h5_news&ac=show&id=$1
+
+RewriteRule ^minjian/?$ /index.php\?ct=h5_page&ac=index
+RewriteRule ^minjian/zhiwen/?$ /index.php\?ct=h5_minjian&ac=zhiwen&tid=432
+RewriteRule ^minjian/shouxiang/?$ /index.php\?ct=h5_page&ac=show&tid=433
+
+RewriteRule ^minjian/shouxiang/ganqingxian/?$ /index.php\?ct=h5_page&ac=show&tid=455
+RewriteRule ^minjian/shouxiang/hunyinxian/?$ /index.php\?ct=h5_page&ac=show&tid=456
+RewriteRule ^minjian/shouxiang/zhihuixian/?$ /index.php\?ct=h5_page&ac=show&tid=457
+RewriteRule ^minjian/shouxiang/shiyexian/?$ /index.php\?ct=h5_page&ac=show&tid=458
+RewriteRule ^minjian/shouxiang/shengmingxian/?$ /index.php\?ct=h5_page&ac=show&tid=459
+
+
+RewriteRule ^minjian/zhixiang/?$ /index.php\?ct=h5_page&ac=show&tid=434
+RewriteRule ^minjian/snsn/?$ /index.php\?ct=h5_page&ac=show&tid=435
+RewriteRule ^minjian/yantiao/?$ /index.php\?ct=h5_page&ac=show&tid=436
+RewriteRule ^minjian/dapenti/?$ /index.php\?ct=h5_page&ac=show&tid=437
+RewriteRule ^minjian/liuyao/?$ /index.php\?ct=h5_page&ac=show&tid=438
+
+RewriteRule ^page-([0-9]+).html$ /index.php\?ct=h5_page&ac=show&tid=$1
+
+
+##星座
+
+
+RewriteRule ^xingzuoyunshi/([0-9]+)/(.*)/?$ /index.php\?ct=h5_xingzuo&ac=xingzuoyunshi&tid=$1&date=$2
+RewriteRule ^xingzuo/shangshengxingzuo/?$ /index.php\?ct=h5_xingzuo&ac=ssxz
+
+RewriteRule ^xingzuo/baiyang/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=1
+RewriteRule ^xingzuo/baiyang/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=2
+RewriteRule ^xingzuo/baiyang/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=3
+RewriteRule ^xingzuo/baiyang/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=4
+RewriteRule ^xingzuo/baiyang/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=5
+RewriteRule ^xingzuo/baiyang/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=401&nid=6
+RewriteRule ^xingzuo/baiyang/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=401
+
+RewriteRule ^xingzuo/jinniu/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=1
+RewriteRule ^xingzuo/jinniu/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=2
+RewriteRule ^xingzuo/jinniu/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=3
+RewriteRule ^xingzuo/jinniu/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=4
+RewriteRule ^xingzuo/jinniu/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=5
+RewriteRule ^xingzuo/jinniu/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=402&nid=6
+RewriteRule ^xingzuo/jinniu/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=402
+
+
+RewriteRule ^xingzuo/shuangzi/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=1
+RewriteRule ^xingzuo/shuangzi/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=2
+RewriteRule ^xingzuo/shuangzi/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=3
+RewriteRule ^xingzuo/shuangzi/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=4
+RewriteRule ^xingzuo/shuangzi/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=5
+RewriteRule ^xingzuo/shuangzi/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=403&nid=6
+RewriteRule ^xingzuo/shuangzi/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=403
+
+RewriteRule ^xingzuo/juxie/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=1
+RewriteRule ^xingzuo/juxie/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=2
+RewriteRule ^xingzuo/juxie/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=3
+RewriteRule ^xingzuo/juxie/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=4
+RewriteRule ^xingzuo/juxie/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=5
+RewriteRule ^xingzuo/juxie/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=404&nid=6
+RewriteRule ^xingzuo/juxie/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=404
+
+RewriteRule ^xingzuo/shizi/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=1
+RewriteRule ^xingzuo/shizi/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=2
+RewriteRule ^xingzuo/shizi/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=3
+RewriteRule ^xingzuo/shizi/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=4
+RewriteRule ^xingzuo/shizi/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=5
+RewriteRule ^xingzuo/shizi/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=405&nid=6
+RewriteRule ^xingzuo/shizi/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=405
+
+RewriteRule ^xingzuo/chunv/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=1
+RewriteRule ^xingzuo/chunv/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=2
+RewriteRule ^xingzuo/chunv/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=3
+RewriteRule ^xingzuo/chunv/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=4
+RewriteRule ^xingzuo/chunv/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=5
+RewriteRule ^xingzuo/chunv/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=406&nid=6
+RewriteRule ^xingzuo/chunv/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=406
+
+RewriteRule ^xingzuo/tiancheng/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=1
+RewriteRule ^xingzuo/tiancheng/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=2
+RewriteRule ^xingzuo/tiancheng/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=3
+RewriteRule ^xingzuo/tiancheng/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=4
+RewriteRule ^xingzuo/tiancheng/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=5
+RewriteRule ^xingzuo/tiancheng/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=407&nid=6
+RewriteRule ^xingzuo/tiancheng/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=407
+
+RewriteRule ^xingzuo/tianxie/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=1
+RewriteRule ^xingzuo/tianxie/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=2
+RewriteRule ^xingzuo/tianxie/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=3
+RewriteRule ^xingzuo/tianxie/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=4
+RewriteRule ^xingzuo/tianxie/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=5
+RewriteRule ^xingzuo/tianxie/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=408&nid=6
+RewriteRule ^xingzuo/tianxie/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=408
+
+RewriteRule ^xingzuo/sheshou/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=1
+RewriteRule ^xingzuo/sheshou/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=2
+RewriteRule ^xingzuo/sheshou/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=3
+RewriteRule ^xingzuo/sheshou/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=4
+RewriteRule ^xingzuo/sheshou/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=5
+RewriteRule ^xingzuo/sheshou/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=409&nid=6
+RewriteRule ^xingzuo/sheshou/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=409
+
+RewriteRule ^xingzuo/mojie/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=1
+RewriteRule ^xingzuo/mojie/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=2
+RewriteRule ^xingzuo/mojie/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=3
+RewriteRule ^xingzuo/mojie/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=4
+RewriteRule ^xingzuo/mojie/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=5
+RewriteRule ^xingzuo/mojie/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=410&nid=6
+RewriteRule ^xingzuo/mojie/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=410
+
+
+RewriteRule ^xingzuo/shuiping/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=1
+RewriteRule ^xingzuo/shuiping/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=2
+RewriteRule ^xingzuo/shuiping/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=3
+RewriteRule ^xingzuo/shuiping/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=4
+RewriteRule ^xingzuo/shuiping/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=5
+RewriteRule ^xingzuo/shuiping/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=411&nid=6
+RewriteRule ^xingzuo/shuiping/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=411
+
+
+RewriteRule ^xingzuo/shuangyu/today/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=1
+RewriteRule ^xingzuo/shuangyu/tomorrow/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=2
+RewriteRule ^xingzuo/shuangyu/week/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=3
+RewriteRule ^xingzuo/shuangyu/month/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=4
+RewriteRule ^xingzuo/shuangyu/year/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=5
+RewriteRule ^xingzuo/shuangyu/love/?$ /index.php\?ct=h5_xingzuo&ac=page&tid=412&nid=6
+RewriteRule ^xingzuo/shuangyu/?$ /index.php\?ct=h5_xingzuo&ac=show&tid=412
+
+##抽签
+RewriteRule ^chouqian/guanyin/1/?$ /index.php\?ct=h5_chouqian&ac=guanyin&act=go
+RewriteRule ^chouqian/guanyin/2/(.*)$ /index.php\?ct=h5_chouqian&ac=guanyin&clicknum=1&qid=$1
+RewriteRule ^chouqian/guanyin/3/(.*)$ /index.php\?ct=h5_chouqian&ac=guanyin&clicknum=2&qid=$1
+RewriteRule ^chouqian/guanyin/4/(.*)$ /index.php\?ct=h5_chouqian&ac=guanyin&act=jq&qid=$1
+RewriteRule ^chouqian/guanyin/?$ /index.php\?ct=h5_chouqian&ac=guanyin
+RewriteRule ^chouqian/?$ /index.php\?ct=h5_chouqian&ac=index
+RewriteRule ^chouqian/index.html$ /index.php\?ct=h5_chouqian&ac=index
+
+RewriteRule ^chouqian/lvzu/1/?$ /index.php\?ct=h5_chouqian&ac=lvzu&act=go
+RewriteRule ^chouqian/lvzu/2/(.*)$ /index.php\?ct=h5_chouqian&ac=lvzu&clicknum=1&qid=$1
+RewriteRule ^chouqian/lvzu/3/(.*)$ /index.php\?ct=h5_chouqian&ac=lvzu&clicknum=2&qid=$1
+RewriteRule ^chouqian/lvzu/4/(.*)$ /index.php\?ct=h5_chouqian&ac=lvzu&act=jq&qid=$1
+RewriteRule ^chouqian/lvzu/?$ /index.php\?ct=h5_chouqian&ac=lvzu
+
+RewriteRule ^chouqian/chegong/1/?$ /index.php\?ct=h5_chouqian&ac=chegong&act=go
+RewriteRule ^chouqian/chegong/2/(.*)$ /index.php\?ct=h5_chouqian&ac=chegong&clicknum=1&qid=$1
+RewriteRule ^chouqian/chegong/3/(.*)$ /index.php\?ct=h5_chouqian&ac=chegong&clicknum=2&qid=$1
+RewriteRule ^chouqian/chegong/4/(.*)$ /index.php\?ct=h5_chouqian&ac=chegong&act=jq&qid=$1
+RewriteRule ^chouqian/chegong/?$ /index.php\?ct=h5_chouqian&ac=chegong
+
+RewriteRule ^chouqian/wanggong/1/?$ /index.php\?ct=h5_chouqian&ac=wanggong&act=go
+RewriteRule ^chouqian/wanggong/2/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&clicknum=1&qid=$1
+RewriteRule ^chouqian/wanggong/3/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&clicknum=2&qid=$1
+RewriteRule ^chouqian/wanggong/4/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&act=jq&qid=$1
+RewriteRule ^chouqian/wanggong/?$ /index.php\?ct=h5_chouqian&ac=wanggong
+
+RewriteRule ^chouqian/wanggong/1/?$ /index.php\?ct=h5_chouqian&ac=wanggong&act=go
+RewriteRule ^chouqian/wanggong/2/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&clicknum=1&qid=$1
+RewriteRule ^chouqian/wanggong/3/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&clicknum=2&qid=$1
+RewriteRule ^chouqian/wanggong/4/(.*)$ /index.php\?ct=h5_chouqian&ac=wanggong&act=jq&qid=$1
+RewriteRule ^chouqian/wanggong/?$ /index.php\?ct=h5_chouqian&ac=wanggong
+
+RewriteRule ^chouqian/huangdaxian/1/?$ /index.php\?ct=h5_chouqian&ac=huangdaxian&act=go
+RewriteRule ^chouqian/huangdaxian/2/(.*)$ /index.php\?ct=h5_chouqian&ac=huangdaxian&clicknum=1&qid=$1
+RewriteRule ^chouqian/huangdaxian/3/(.*)$ /index.php\?ct=h5_chouqian&ac=huangdaxian&clicknum=2&qid=$1
+RewriteRule ^chouqian/huangdaxian/4/(.*)$ /index.php\?ct=h5_chouqian&ac=huangdaxian&act=jq&qid=$1
+RewriteRule ^chouqian/huangdaxian/?$ /index.php\?ct=h5_chouqian&ac=huangdaxian
+
+RewriteRule ^chouqian/guandi/1/?$ /index.php\?ct=h5_chouqian&ac=guandi&act=go
+RewriteRule ^chouqian/guandi/2/(.*)$ /index.php\?ct=h5_chouqian&ac=guandi&clicknum=1&qid=$1
+RewriteRule ^chouqian/guandi/3/(.*)$ /index.php\?ct=h5_chouqian&ac=guandi&clicknum=2&qid=$1
+RewriteRule ^chouqian/guandi/4/(.*)$ /index.php\?ct=h5_chouqian&ac=guandi&act=jq&qid=$1
+RewriteRule ^chouqian/guandi/?$ /index.php\?ct=h5_chouqian&ac=guandi
+
+
+RewriteRule ^chouqian/tianhou/1/?$ /index.php\?ct=h5_chouqian&ac=tianhou&act=go
+RewriteRule ^chouqian/tianhou/2/(.*)$ /index.php\?ct=h5_chouqian&ac=tianhou&clicknum=1&qid=$1
+RewriteRule ^chouqian/tianhou/3/(.*)$ /index.php\?ct=h5_chouqian&ac=tianhou&clicknum=2&qid=$1
+RewriteRule ^chouqian/tianhou/4/(.*)$ /index.php\?ct=h5_chouqian&ac=tianhou&act=jq&qid=$1
+RewriteRule ^chouqian/tianhou/?$ /index.php\?ct=h5_chouqian&ac=tianhou
+
+
+RewriteRule ^chouqian/yuelao/1/?$ /index.php\?ct=h5_chouqian&ac=yuelao&act=go
+RewriteRule ^chouqian/yuelao/2/(.*)$ /index.php\?ct=h5_chouqian&ac=yuelao&clicknum=1&qid=$1
+RewriteRule ^chouqian/yuelao/3/(.*)$ /index.php\?ct=h5_chouqian&ac=yuelao&clicknum=2&qid=$1
+RewriteRule ^chouqian/yuelao/4/(.*)$ /index.php\?ct=h5_chouqian&ac=yuelao&act=jq&qid=$1
+RewriteRule ^chouqian/yuelao/?$ /index.php\?ct=h5_chouqian&ac=yuelao
+
+
+RewriteRule ^chouqian/zhugeliang/?$ /index.php\?ct=h5_chouqian&ac=zhugeliang
+RewriteRule ^chouqian/zhugeliang/([^/]*)/?$ /index.php\?ct=h5_chouqian&ac=zhugeliang&name1=$1
+
+RewriteRule ^shengxiao/shu/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=418
+RewriteRule ^shengxiao/niu/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=419
+RewriteRule ^shengxiao/hu/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=420
+RewriteRule ^shengxiao/tu/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=421
+RewriteRule ^shengxiao/long/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=422
+RewriteRule ^shengxiao/she/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=423
+RewriteRule ^shengxiao/ma/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=424
+RewriteRule ^shengxiao/yang/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=425
+RewriteRule ^shengxiao/hou/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=426
+RewriteRule ^shengxiao/ji/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=427
+RewriteRule ^shengxiao/gou/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=428
+RewriteRule ^shengxiao/zhu/?$ /index.php\?ct=h5_shengxiao&ac=show&tid=429
+RewriteRule ^shengxiao/?$ /index.php\?ct=h5_shengxiao&ac=index
+
+RewriteRule ^huangli.js /index.php\?ct=hdjr&ac=jrhl
+
+RewriteRule ^api/hdjr/([^/]*)/?$ /index.php\?ct=api&ac=huangli_ajax&type=$1
+RewriteRule ^api/xingzuo/([^/]*)/?$ /index.php\?ct=api&ac=yunshi_ajax&type=$1
+RewriteRule ^api/srmm/?$ /index.php\?ct=api&ac=shengrimima
+##end抽签
+
+RewriteRule ^sech-(.*)-([0-9]+).html /index.php\?ct=h5_zgjm&ac=search&q=$1&page=$2
+RewriteRule ^sech-(.*).html /index.php\?ct=h5_zgjm&ac=search&q=$1
+
+
+
+RewriteRule ^zt-(.*).html /index.php\?ct=zhuanti&ac=index&page=$1
+RewriteRule ^zt.html /index.php\?ct=zhuanti&ac=index
+RewriteRule ^zt/(.*).html /index.php\?ct=zhuanti&ac=detail&url=$1
